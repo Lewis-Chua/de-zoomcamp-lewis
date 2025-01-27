@@ -15,7 +15,7 @@ group by 1
 
 -- Question 4
 select  
-cast(lpep_dropoff_datetime as date) as lpep_dropoff_datetime
+cast(lpep_pickup_datetime as date) as lpep_pickup_datetime
 , max(trip_distance) as longest_trip_distance
 from yellow_taxi_trips_2019
 group by 1
